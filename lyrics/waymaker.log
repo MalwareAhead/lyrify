@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.30)  31 DEC 2024 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.30)  31 DEC 2024 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,6 +706,12 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks46
 \inpenc@posthook=\toks47
 )
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 11
+.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count337
@@ -714,24 +720,24 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 (./waymaker.aux)
 \openout1 = `waymaker.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -797,69 +803,54 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 9.
+Package hyperref Info: Link coloring OFF on input line 11.
 
 (./waymaker.out) (./waymaker.out)
 \@outlinefile=\write5
 \openout5 = `waymaker.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 9.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 9.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 11.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 9.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 9.
+(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 11.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 9.
+(Font)                  OT1/cmr/bx/n --> T1/phv/b/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 9.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 9.
+(Font)                  OT1/cmr/bx/n --> T1/phv/b/n on input line 11.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 9.
+(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 9.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 9.
+(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 11.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 9.
+(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 9.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 9.
+(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 11.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 9.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 9.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 9.
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 9.
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 9.
+(Font)                  OT1/cmss/b/n --> T1/phv/b/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 9.
+(Font)                  T1/phv/b/n --> T1/phv/b/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 9.
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 9.
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 9.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 9.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 9.
-
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 9.
-
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 9.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 9.
-
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 9.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 11.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -887,7 +878,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (./waymaker.nav) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2
+al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2
 
 ] [3
 
@@ -907,8 +898,7 @@ al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2
 
 ] [11
 
-]
-[12
+] [12
 
 ] [13
 
@@ -922,7 +912,8 @@ al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2
 \tf@snm=\write8
 \openout8 = `waymaker.snm'.
 
- (./waymaker.aux)
+
+(./waymaker.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -931,19 +922,18 @@ Package rerunfilecheck Info: File `waymaker.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21379 strings out of 474116
- 408167 string characters out of 5743682
+ 21426 strings out of 474116
+ 408817 string characters out of 5743682
  1930187 words of memory out of 5000000
- 43289 multiletter control sequences out of 15000+600000
- 561755 words of font info for 42 fonts, out of 8000000 for 9000
+ 43332 multiletter control sequences out of 15000+600000
+ 568699 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,11n,123p,407b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on waymaker.pdf (13 pages, 30152 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on waymaker.pdf (13 pages, 14407 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 97 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  27 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
