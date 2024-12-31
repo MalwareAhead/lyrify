@@ -30,10 +30,13 @@ fn process_file(input_path: &Path) -> Result<()> {
     write!(output, "{}", r#"\documentclass{beamer}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{xcolor}
 \usetheme{default}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}{}
+\setbeamercolor{background canvas}{bg=black}
 \begin{document}
+\color{white}
 "#)?;
 
     for (i, slide) in slides.iter().enumerate() {
