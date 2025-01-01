@@ -27,7 +27,7 @@ fn process_file(input_path: &Path) -> Result<()> {
     let slides: Vec<_> = content.split("\n\n").collect();
     let mut output = File::create(output_path)?;
 
-    write!(output, "{}", r#"\documentclass{beamer}
+    write!(output, "{}", r#"\documentclass[aspectratio=169]{beamer}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
@@ -35,6 +35,8 @@ fn process_file(input_path: &Path) -> Result<()> {
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}{}
 \setbeamercolor{background canvas}{bg=black}
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
 \begin{document}
 \color{white}
 "#)?;
@@ -45,7 +47,7 @@ fn process_file(input_path: &Path) -> Result<()> {
         let lines: Vec<_> = slide.lines().collect();
         for line in &lines {
             if !line.is_empty() {
-                writeln!(output, "{} \\\\", escape_latex(line))?;
+                writeln!(output, "\\huge{{{}}} \\\\", escape_latex(line))?;
             }
         }
 
