@@ -98,7 +98,7 @@ fn generate_tex_file(input_path: &Path, output_path: &PathBuf) -> Result<()> {
 "#)?;
 
     for (i, slide) in slides.iter().enumerate() {
-        write!(output, "\\begin{{frame}}\n\\centering\n")?;
+        write!(output, "\\begin{{frame}}\n\\centering\n\\color{{white}}\n")?;
 
         let lines: Vec<_> = slide.lines().collect();
         for line in &lines {
@@ -110,7 +110,7 @@ fn generate_tex_file(input_path: &Path, output_path: &PathBuf) -> Result<()> {
         if i < slides.len() - 1 {
             let next_slide = slides[i + 1];
             if let Some(first_line) = next_slide.lines().next() {
-                write!(output, "\n\\begin{{textblock}}{{1.0}}(0.00001,0.8)\\color{{white}}\\small{{{}}}\\end{{textblock}}\n", escape_latex(first_line))?;
+                write!(output, "\n\\begin{{textblock}}{{1.0}}(0.00001,0.8)\\color{{gray}}\\normalsize{{{}}}\\end{{textblock}}\n", escape_latex(first_line))?;
             }
         }
 
