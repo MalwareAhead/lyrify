@@ -84,12 +84,15 @@ fn generate_tex_file(input_path: &Path, output_path: &PathBuf) -> Result<()> {
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
+\usepackage[absolute,overlay]{textpos}
 \usetheme{default}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}{}
 \setbeamercolor{background canvas}{bg=black}
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperheight}
 \begin{document}
 \color{white}
 "#)?;
@@ -107,7 +110,7 @@ fn generate_tex_file(input_path: &Path, output_path: &PathBuf) -> Result<()> {
         if i < slides.len() - 1 {
             let next_slide = slides[i + 1];
             if let Some(first_line) = next_slide.lines().next() {
-                write!(output, "\n\\vfill\\small{{{}}}\n", escape_latex(first_line))?;
+                write!(output, "\n\\begin{{textblock}}{{1.0}}(0.00001,0.8)\\color{{white}}\\small{{{}}}\\end{{textblock}}\n", escape_latex(first_line))?;
             }
         }
 

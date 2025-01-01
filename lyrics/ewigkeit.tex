@@ -2,19 +2,22 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
+\usepackage[absolute,overlay]{textpos}
 \usetheme{default}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}{}
 \setbeamercolor{background canvas}{bg=black}
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperheight}
 \begin{document}
 \color{white}
 \begin{frame}
 \centering
 \huge{Die Ewigkeit ist mein Zuhaus} \\
 
-\vfill\small{Du hast sie in mein Herz gelegt}
+\begin{textblock}{1.0}(0.00001,0.8)\color{white}\small{Du hast sie in mein Herz gelegt}\end{textblock}
 \end{frame}
 
 \begin{frame}
