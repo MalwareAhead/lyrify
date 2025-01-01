@@ -91,6 +91,7 @@ fn generate_tex_file(input_path: &Path, output_path: &PathBuf) -> Result<()> {
 \setbeamercolor{background canvas}{bg=black}
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
+\renewcommand{\baselinestretch}{1.2}
 \setlength{\TPHorizModule}{\paperwidth}
 \setlength{\TPVertModule}{\paperheight}
 \begin{document}
