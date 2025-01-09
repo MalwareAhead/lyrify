@@ -81,6 +81,7 @@ fn generate_tex_file(input_path: &Path, output_path: &PathBuf) -> Result<()> {
     let mut output = File::create(output_path)?;
 
 	write!(output, "{}", r#"\documentclass[aspectratio=169]{beamer}
+\setbeamersize{text margin left=0pt,text margin right=0pt}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
