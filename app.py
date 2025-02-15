@@ -49,11 +49,12 @@ class LyricsToPPTXConverter:
         for file_path in files:
             try:
                 self.create_presentation(file_path)
-                messagebox.showinfo("Success",
-                                    f"Presentation created for {os.path.basename(file_path)}")
             except Exception as e:
                 messagebox.showerror("Error",
                                      f"Error processing {os.path.basename(file_path)}: {str(e)}")
+
+        messagebox.showinfo("Success",
+                            f"Presentations created")
 
     def create_presentation(self, txt_file):
         with open(txt_file, 'r', encoding='utf-8') as file:
