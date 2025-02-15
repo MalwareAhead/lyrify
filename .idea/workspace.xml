@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cccf7b3-b875-4484-927f-a0397de194fc" name="Changes" comment="Next attempt">
+    <list default="true" id="8cccf7b3-b875-4484-927f-a0397de194fc" name="Changes" comment="Attempt 3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,12 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1739629744333</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Attempt 3">
+      <option name="closed" value="true" />
+      <created>1739629854845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739629854845</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Next attempt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Next attempt" />
+    <MESSAGE value="Attempt 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempt 3" />
   </component>
 </project>
