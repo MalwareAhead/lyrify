@@ -65,44 +65,47 @@ class LyricsToPPTXConverter:
         prs.slide_width = Pt(1920)
         prs.slide_height = Pt(1080)
 
-        # Calculate dimensions
         slide_height = 1080
-        main_text_height = int(slide_height * (2 / 3))  # 2/3 of slide height
+        main_text_height = int(slide_height * (2 / 3))
 
         for i, slide_text in enumerate(slides_content):
             slide = prs.slides.add_slide(prs.slide_layouts[6])
 
-            # Set black background
             background = slide.background
             fill = background.fill
             fill.solid()
             fill.fore_color.rgb = RGBColor(0, 0, 0)
 
-            # Main content text box
+            # Calculate top margin based on number of lines
+            line_count = len(slide_text.split('\n'))
+            top_margin = 175
+            if line_count == 2:
+                top_margin = 325
+            elif line_count == 3:
+                top_margin = 250
+
             main_text_box = slide.shapes.add_textbox(
                 left=Pt(0),
-                top=Pt(175),  # Start at top
-                width=Pt(1920),  # Full slide width
-                height=Pt(main_text_height)  # 2/3 of slide height
+                top=Pt(top_margin),
+                width=Pt(1920),
+                height=Pt(main_text_height)
             )
 
             main_text_frame = main_text_box.text_frame
             main_text_frame.text = slide_text
-            main_text_frame.vertical_anchor = 1  # Middle vertical alignment
+            main_text_frame.vertical_anchor = 1
 
-            # Format main text
             for paragraph in main_text_frame.paragraphs:
                 paragraph.alignment = PP_ALIGN.CENTER
                 paragraph.font.name = 'Arial'
-                paragraph.font.size = Pt(90)  # Fixed 90pt font size
+                paragraph.font.size = Pt(90)
                 paragraph.font.color.rgb = RGBColor(255, 255, 255)
-                paragraph.line_spacing = 1.5  # 1.5 line spacing
+                paragraph.line_spacing = 1.5
 
-            # Add preview of next slide if not the last slide
             if i < len(slides_content) - 1:
                 preview_text_box = slide.shapes.add_textbox(
                     left=Pt(0),
-                    top=Pt(main_text_height + 200),  # Position below main text
+                    top=Pt(900),
                     width=Pt(1920),
                     height=Pt(100)
                 )
@@ -111,12 +114,16 @@ class LyricsToPPTXConverter:
                 next_slide_first_line = slides_content[i + 1].split('\n')[0]
                 preview_text_frame.text = next_slide_first_line
 
-                # Format preview text
                 preview_paragraph = preview_text_frame.paragraphs[0]
                 preview_paragraph.alignment = PP_ALIGN.CENTER
                 preview_paragraph.font.name = 'Arial'
-                preview_paragraph.font.size = Pt(45)  # Fixed 45pt font size
+                preview_paragraph.font.size = Pt(45)
                 preview_paragraph.font.color.rgb = RGBColor(128, 128, 128)
+
+        # Add final empty slide
+        last_slide = prs.slides.add_slide(prs.slide_layouts[6])
+        last_slide.background.fill.solid()
+        last_slide.background.fill.fore_color.rgb = RGBColor(0, 0, 0)
 
         output_filename = os.path.splitext(os.path.basename(txt_file))[0] + '.pptx'
         output_path = os.path.join(self.output_dir, output_filename)
