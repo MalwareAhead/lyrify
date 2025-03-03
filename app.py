@@ -80,7 +80,9 @@ class LyricsToPPTXConverter:
             # Calculate top margin based on number of lines
             line_count = len(slide_text.split('\n'))
             top_margin = 175
-            if line_count == 2:
+            if line_count == 1:
+                top_margin = 400
+            elif line_count == 2:
                 top_margin = 325
             elif line_count == 3:
                 top_margin = 250
@@ -120,11 +122,6 @@ class LyricsToPPTXConverter:
                 preview_paragraph.font.name = 'Arial'
                 preview_paragraph.font.size = Pt(45)
                 preview_paragraph.font.color.rgb = RGBColor(128, 128, 128)
-
-        # Add final empty slide
-        last_slide = prs.slides.add_slide(prs.slide_layouts[6])
-        last_slide.background.fill.solid()
-        last_slide.background.fill.fore_color.rgb = RGBColor(0, 0, 0)
 
         output_filename = os.path.splitext(os.path.basename(txt_file))[0] + '.pptx'
         output_path = os.path.join(self.output_dir, output_filename)
